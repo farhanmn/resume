@@ -524,10 +524,29 @@ section {
   color: #6b96be;
 }
 
-.home .image {
-  background: url("../img/me.jpg") center center no-repeat;
-  background-size: cover;
-  min-height: 400px;
+/* adjust image size for smaller screens */
+@media (min-width: 576px) {
+  .home .image {
+    background: url("../img/me-small.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 400px;
+  }
+}
+/* adjust image size for medium screens */
+@media (min-width: 768px) {
+  .home .image {
+    background: url("../img/me-medium.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 400px;
+  }
+}
+/* adjust image size for large screens */
+@media (min-width: 992px) {
+  .home .image {
+    background: url("../img/me-large.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 400px;
+  }
 }
 
 @media (max-width: 991px) {
